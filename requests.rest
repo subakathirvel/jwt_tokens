@@ -1,0 +1,23 @@
+###
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic3ViYSIsImlhdCI6MTcxMjU1OTY2NSwiZXhwIjoxNzEyNTU5Njk1fQ.CD5T063X1N4Ev6GhFsYZJjFF8uAmXZJ-KC7WzEU21_c
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{ 
+    "username" : "suba"
+     }
+###
+
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{ 
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic3ViYSIsImlhdCI6MTcxMjU1OTU5NX0.0_QMLRHjApwxW_vemT2dS4gq2f5tuPEexwwYI0636xs"
+     }
+###
+DELETE http://localhost:4000/logout
